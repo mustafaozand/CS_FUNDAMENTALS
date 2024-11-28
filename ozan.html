@@ -1,0 +1,36 @@
+<html>
+
+<script>
+
+function sayHello() {
+    console.log(document.getElementById("my_name").value);
+    alert("Hello " + document.getElementById("my_name").value + "!!!!");
+}
+
+</script>
+<style>
+.click_btn_sec {
+    padding: 10;
+   background-color: red;
+   height: 10em;
+   width: 50%;
+   border-radius: 10%;
+}
+</style>
+<header>
+
+</header>
+
+<body>
+    <h1>
+        HTML Exercise
+    </h1>
+
+    <a href="https://www.google.com"> Go to google  </a>
+    <div class="click_btn_sec">
+    <input id="my_name" name="name", type="text" />
+        <button onclick="sayHello()">Click To Say Hello </button>
+
+</div>
+</body>
+</html>
