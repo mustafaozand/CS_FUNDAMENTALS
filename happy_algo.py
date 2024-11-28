@@ -5,6 +5,7 @@ The 'happy' algorithm is:
 • continue with this number
 • repeat until either the answer is 1 (in which case the number is 'happy') 
   or until you get trapped in a cycle (in which case the number is 'unhappy')
+  
 """
 
 def sum_of_square_of_digits(number):
