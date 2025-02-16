@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Ozan's webpage</h1>
+    <img src="ozan_dogan.jpeg" height="100">
+    <br>
+    <button id="myButton">Click Me</button>
+    <p>
+       <a href='https://ozandogan.co.uk'>
+        A Link
+       </a>
+    </p>
+    <p id="2">
+        I am cooking.
+    </p>
+    <script>
+        class ButtonHandler {
+            constructor(buttonId, targetId) {
+                this.button = document.getElementById(buttonId);
+                this.target = document.getElementById(targetId);
+                this.pressed = false;
+                this.button.addEventListener('click', () => this.toggleColor());
+            }
+
+            toggleColor() {
+                if (this.pressed) {
+                    this.target.style.color = 'black';
+                } else {
+                    this.target.style.color = 'blue';
+                }
+                this.pressed = !this.pressed;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttonHandler = new ButtonHandler('myButton', '2');
+        });
+    </script>
+</body>
+</html>

@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "HashTable",
+            "request": "launch",
+            "mainClass": "Data_Types.HashTable",
+            "projectName": "Algorithms_a9fc44a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Data_Types.Main",
+            "projectName": "Algorithms_a9fc44a7"
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
