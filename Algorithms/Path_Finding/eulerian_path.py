@@ -22,7 +22,7 @@ class EulerianPath:
     def find_start_vertex(self):
         # We will find a valid starting vertex for the eulerian path
         start_vertex = None
-        for vertex, degree in self.edge_count.items(): # .items() will convert the dictionary into a tuple, so that for one index vertex you can access the vertex and also access the degree.
+        for vertex, degree in self.edge_count.items(): 
             if degree % 2 == 1: 
                 return vertex
             if start_vertex is None:
