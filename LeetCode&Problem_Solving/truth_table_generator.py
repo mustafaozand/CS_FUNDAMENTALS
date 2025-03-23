@@ -40,6 +40,7 @@ def generate_truth_table(expression):
 expression = "( A AND B ) OR ( NOT ( C OR D ) )"
 
 print(generate_truth_table(expression))
+## Comments
 
 
 
